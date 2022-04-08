@@ -16,7 +16,7 @@
 body{
     background-color: VAR(--rosaClaro);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: var(--azulClaro);
 }
 
 header .container{
@@ -56,9 +56,33 @@ header nav a:hover{
 }
 
 .documentario-principal .descricao{
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.titulo{
+.documentario-principal .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botao{
+    background-color: var(--azulClaro);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--azulClaro);
+}
+
+.botao i{
+    margin-right: 8px;
 }
