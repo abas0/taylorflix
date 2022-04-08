@@ -1,6 +1,6 @@
 :root{
     --rosaClaro: #FFC0CB;
-    --azulClaro: #87ceeb;
+    --azulClaro: #00aef3;
     --amarelo: rgb(254,254,90);
     --rosaPink: #d20189;
 }
@@ -11,9 +11,12 @@
     box-sizing: border-box;
 }
 
+/*elementos base*/
+
 body{
     background-color: VAR(--rosaClaro);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container{
@@ -37,4 +40,25 @@ header nav a {
 
 header nav a:hover{
     color: var(--amarelo);
+}
+
+/*filme principal*/
+
+.documentario-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(78, 2, 52, 0.5),rgba(227, 144, 196, 0.5)), url('../img/maxresdefault.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.documentario-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
 }
