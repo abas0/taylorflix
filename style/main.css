@@ -1,3 +1,40 @@
+:root{
+    --rosaClaro: #FFC0CB;
+    --azulClaro: #87ceeb;
+    --amarelo: rgb(254,254,90);
+    --rosaPink: #d20189;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: #FFC0CB;
+    background-color: VAR(--rosaClaro);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; /*default*/
+    align-items: center;
+    justify-content: space-between; /*espaço entre tags filhas*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--rosaPink);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(108, 0, 108);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--amarelo);
 }
